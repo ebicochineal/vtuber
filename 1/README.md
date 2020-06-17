@@ -327,6 +327,7 @@ root.mainloop()
   ```py
   if 3 - cells[y][x] <= cnt <= 3 : nextcells[y][x] = 1
   ```
+- 黒い画面を非表示にするには拡張子を.pyから.pywにすれば表示されなくなります
 ---
 #### 完成コード
 ```py
@@ -391,3 +392,6 @@ def u(_=0):global d,s;s=[[2-s[y][x]<sum(s[(y+j)%64][(x+i)%64]for i,j in[(a,b)for
 o=Tk();o.resizable(0,0);z=o.after_cancel;v=Canvas(o,width=512,height=512);v.pack();v.bind(d%1,l);v.bind(d%3,lambda e:u(z(d)));o.mainloop()
 ```
 - [海老レンジャイ 競技プログラミング部 闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
+
+
+
