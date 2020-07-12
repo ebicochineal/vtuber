@@ -126,8 +126,9 @@ root.mainloop()
   kx = min(gw-1, max(kx, 0))
   ```
 
+#### 追記
 - 座標のずれを無くす、キャンバスの境界線を消す
-tkinter.Canvasのオプション highlightthickness = 0で境界線を消すことができます
+tkinter.Canvasのオプション highlightthickness = 0で境界線を消すことができます  
 
 
 ---
