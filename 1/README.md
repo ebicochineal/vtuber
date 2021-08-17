@@ -118,10 +118,12 @@ root.mainloop()
   if kx > gw-1:
       kx = gw-1
   ```
+  ↓
   ```py
   if kx < 0 : kx = 0
   if kx > gw-1 : kx = gw-1
   ```
+  ↓
   ```py
   kx = min(gw-1, max(kx, 0))
   ```
@@ -177,6 +179,7 @@ root.mainloop()
   for y in range(gh):
       cells.append([0] * gw)
   ```
+  ↓
   ```py
   cells = [[0] * gw for i in range(gh)]
   ```
@@ -319,6 +322,7 @@ root.mainloop()
       if py > gh-1 : py = 0
       cnt += cells[py][px]
   ```
+  ↓
   ```py
   cnt = sum(cells[(y+dy)%gh][(x+dx)%gw] for dx, dy in d)
   ```
@@ -330,6 +334,7 @@ root.mainloop()
   else:
       if cnt == 3 : nextcells[y][x] = 1 
   ```
+  ↓
   ```py
   if 3 - cells[y][x] <= cnt <= 3 : nextcells[y][x] = 1
   ```
@@ -402,8 +407,6 @@ o=Tk();o.resizable(0,0);z=o.after_cancel;v=Canvas(o,width=512,height=512);v.pack
 
 ---
 #### おまけ C#で書き直したライフゲームのコード
-
-
 ```cs
 using System;
 using System.Drawing;
