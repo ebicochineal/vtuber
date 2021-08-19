@@ -338,7 +338,7 @@ root.mainloop()
   ```py
   if 3 - cells[y][x] <= cnt <= 3 : nextcells[y][x] = 1
   ```
-- 黒い画面を非表示にするには拡張子を.pyから.pywにすれば表示されなくなります
+- 黒い画面(コンソール)を非表示にするには拡張子を.pyから.pywにすれば表示されなくなります
 ---
 #### 完成コード
 ```py
@@ -407,6 +407,13 @@ o=Tk();o.resizable(0,0);z=o.after_cancel;v=Canvas(o,width=512,height=512);v.pack
 
 ---
 #### おまけ C#で書き直したライフゲームのコード
+- csc.exeでコンパイルできます
+- csc.exeの場所はたぶんこのへん C:/Windows/Microsoft.NET/Framework64/v4.0.30319
+- コンソールを非表示オプション /target:winexe  
+
+
+
+
 ```cs
 using System;
 using System.Drawing;
